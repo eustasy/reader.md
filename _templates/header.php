@@ -32,10 +32,12 @@
 			td {
 				padding: .5rem 2rem;
 			}
+			/*
 			tr th:first-child,
 			tr td:first-child { padding-left: 1rem; }
 			tr th:last-child,
 			tr td:last-child { padding-right: 1rem; }
+			*/
 			tr:nth-child(odd) { background: #fafafa; }
 			tr:nth-child(even) { background-color: #efefef; }
 			th {
@@ -80,7 +82,9 @@
 					$Request['Source']
 				) {
 					require_once $MDR['Core'].'/function.url_to_title.php';
-					echo '<a href="'.$Request['Source'].'" class="source float-right">'.url_to_title($Lang[$Settings['Language']]['SOURCE'], $Settings['Capitalize']['Breadcrumbs']).'</a>';
+					echo '<a href="'.$Request['Source'].'" class="source float-right">';
+					echo url_to_title($Lang[$Settings['Language']]['SOURCE'], $Settings['Capitalize']['Breadcrumbs']);
+					echo '</a>';
 				}
 				echo '</p>';
 			}
