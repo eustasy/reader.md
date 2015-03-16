@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>MDR</title>
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/g/normalize,colors.css">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700|Inconsolata">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/normalize,colors.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700|Inconsolata">
 		<link rel="stylesheet" href="<?php echo $Assets['Styles']; ?>">
 		<style>
 

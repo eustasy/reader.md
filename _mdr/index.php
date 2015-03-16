@@ -54,7 +54,6 @@ $Templates['Header']    = $MDR['Templates'].'header.php';
 $Templates['Footer']    = $MDR['Templates'].'footer.php';
 
 $Assets['Styles']       = '/assets/styles.min.css';
-$Assets['REM.js']       = '/assets/rem.min.js';
 
 
 
@@ -172,4 +171,3 @@ if (
 	include $Templates['Footer'];
 
 } // END NON-EXISTANT
-
