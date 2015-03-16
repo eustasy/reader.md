@@ -1,5 +1,5 @@
 (function (window, undefined) {
-    "use strict";
+    'use strict';
     // test for REM unit support
     var cssremunit =  function() {
         var div = document.createElement( 'div' );
@@ -75,12 +75,12 @@
     buildCSS = function () { // first build each individual rule from elements in the found array and then add it to the string of rules.
         var pattern = /[\w\d\s\-\/\\%#:,.'"*()]+\d*\.?\d+rem[\w\d\s\-\/\\%#:!,.'"*()]*[;}]/g; // find properties with rem values in them
         for( var i = 0; i < found.length; i++ ){
-            rules = rules + found[i].substr(0,found[i].indexOf("{")+1); // save the selector portion of each rule with a rem value
+            rules = rules + found[i].substr(0,found[i].indexOf('{')+1); // save the selector portion of each rule with a rem value
             var current = found[i].match( pattern );
             for( var j = 0; j<current.length; j++ ){ // build a new set of with only the selector and properties that have rem in the value
                 rules = rules + current[j];
-                if( j === current.length-1 && rules[rules.length-1] !== "}" ){
-                    rules = rules + "\n}";
+                if( j === current.length-1 && rules[rules.length-1] !== '}' ){
+                    rules = rules + '\n}';
                 }
             }
         }
@@ -117,7 +117,7 @@
         try {
             //try to create a request object
             //arranging the two conditions this way is for IE7/8's benefit
-            //so that it works with any combination of ActiveX or Native XHR settings, 
+            //so that it works with any combination of ActiveX or Native XHR settings,
             //as long as one or the other is enabled; but if both are enabled
             //it prefers ActiveX, which means it still works with local files
             //(Native XHR in IE7/8 is blocked and throws "access is denied",
@@ -153,7 +153,7 @@
         if ( !window.matchMedia && !window.msMatchMedia ) {
             // If the browser doesn't support media queries, we find all @media declarations in the CSS and remove them.
             // Note: Since @rules can't be nested in the CSS spec, we're safe to just check for the closest following "}}" to the "@media".
-            css = css.replace(/@media[\s\S]*?\}\s*\}/g, "");
+            css = css.replace(/@media[\s\S]*?\}\s*\}/g, '');
         }
 
         return css;

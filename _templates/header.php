@@ -7,26 +7,41 @@
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700|Inconsolata">
 		<link rel="stylesheet" href="<?php echo $Assets['Styles']; ?>">
 		<style>
+
 			body {
 				font-size: 1em;
 				margin: 0 auto;
 				max-width: 50rem;
 				width: 90%;
 			}
+			footer {
+				opacity: 0.7;
+				margin: 5rem 0 1rem;
+			}
+
 			h1 span {
 				opacity: 0.7;
 				font-size: 1rem;
-			}
-			ul {
-				padding-left: 1.2rem;
 			}
 			.breadcrumbs {
 				opacity: 0.7;
 				color: #666;
 			}
-			.source {
-				opacity: 0.7;
+
+			th,
+			td {
+				padding: .5rem 2rem;
 			}
+			tr th:first-child,
+			tr td:first-child { padding-left: 1rem; }
+			tr th:last-child,
+			tr td:last-child { padding-right: 1rem; }
+			tr:nth-child(odd) { background: #fafafa; }
+			tr:nth-child(even) { background-color: #efefef; }
+			th {
+				background: #dfdfdf;
+			}
+
 			.text-center { text-align: center; }
 			.text-left   { text-align: left;   }
 			.text-right  { text-align: right;  }
@@ -34,8 +49,10 @@
 				float:  none;
 				margin: 0 auto;
 			}
+
 			.float-left  { float: left; }
 			.float-right { float: right; }
+
 		</style>
 	</head>
 	<body>

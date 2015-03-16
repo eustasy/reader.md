@@ -20,7 +20,7 @@ A [link](http://example.com).
 
 Shopping list:
 
- * apples
+  * apples
   * oranges
   * pears
 
@@ -28,7 +28,14 @@ Numbered list:
 
   1. apples
   2. oranges
-  3. pears
+  3. bananas
+  4. pears
+  5. lemons
+  6. mangos
+  7. grapes
+  8. blackberries
+  9. watermelon
+  10. cherries
+  10. an incorrect number gets corrected
 
-The rain---not the reign---in
-Spain.
+The ~~reign~~ rain in Spain.

@@ -1,18 +1,19 @@
 <?php
 
-function ucsentences($string) {
+function ucsentences($String) {
 
-	$sentences = preg_split('/([.?!—]+)/', $string, -1, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
+	// Note: That's an emdash, not just a normal one.
+	$Sentences = preg_split('/([.?!—:]+)/', $String, -1, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
 
-	$new_string = '';
-	foreach ($sentences as $key => $sentence) {
-		if ( ( $key & 1 ) == 0 ) {
-			$new_string .= ucfirst(strtolower(trim($sentence)));
+	$New_String = '';
+	foreach ($Sentences as $Key => $Sentence) {
+		if ( ( $Key & 1 ) == 0 ) {
+			$New_String .= ucfirst(strtolower(trim($Sentence)));
 		} else {
-			$new_string .= $sentence.' ';
+			$New_String .= $Sentence.' ';
 		}
 	}
 
-	return trim($new_string);
+	return trim($New_String);
 
 }
