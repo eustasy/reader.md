@@ -2,6 +2,11 @@ MDR (pronounced Mer-der, like a mermaid stating something obvious), is a markdow
 
 By offloading editing to GitHub, you site can run blazingly fast with just a few files, and a couple of lines of Markdown. In fact, almost half the projects size is [Parsedown](http://parsedown.org), a [better Markdown processor](http://parsedown.org/consistency), without the need to off registration, editing, or any of that messy stuff like password resets that comes with it (if you're looking to have that handled, try [Simplet](https://github.com/eustas/simplet)).
 
+## Code Quality
+[![Codacy Badge](https://www.codacy.com/project/badge/79daac16dd0d412796d528530c689753)](https://www.codacy.com/public/lewisgoddard/mdr)
+[![Code Climate](https://codeclimate.com/github/eustasy/mdr/badges/gpa.svg)](https://codeclimate.com/github/eustasy/mdr)
+[![Test Coverage](https://codeclimate.com/github/eustasy/mdr/badges/coverage.svg)](https://codeclimate.com/github/eustasy/mdr)
+
 ## What Do You Need?
 - The latest [stable version](http://nginx.org/en/download.html) of [Nginx](http://nginx.org/).
 - A [supported release](http://php.net/supported-versions.php) of [PHP](http://php.net/).
