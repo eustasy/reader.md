@@ -39,7 +39,8 @@ $MDR['Core']            = __DIR__;
 $MDR['Root']            = str_replace('/_mdr', '', $MDR['Core']);
 $MDR['Templates']       = $MDR['Root'].'/_templates/';
 
-$Request['Raw']         = $_SERVER['REQUEST_URI'];
+// PHP >= 5.2 Only
+$Request['Raw']         = filter_input(INPUT_SERVER, 'REQUEST_URI');
 $Request['Exploded']    = explode('?', $Request['Raw']);
 $Request['Trimmed']     = trim(rtrim(str_replace('.md', '', $Request['Exploded'][0]), '/'));
 $Request['Directory']   = $MDR['Root'].$Request['Trimmed'];
@@ -171,5 +172,4 @@ if (
 	include $Templates['Footer'];
 
 } // END NON-EXISTANT
-
 
