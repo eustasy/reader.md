@@ -2,7 +2,7 @@
 
 function Title_Files($Files, $Recursive = true) {
 
-	global $MDR, $Settings;
+	global $MDR;
 
 	foreach ( $Files as $File => $Title) {
 
