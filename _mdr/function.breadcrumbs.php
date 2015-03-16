@@ -9,7 +9,7 @@ function Breadcrumbs($Breadcrumbs) {
 		$Crumbs[$Crumb] = $Breadcrumbs;
 		$Breadcrumbs = substr($Breadcrumbs, 0, $Offset);
 	}
-	$Crumbs['MDR'] = '/'; 
+	$Crumbs['MDR'] = '/';
 	$Crumbs = array_reverse($Crumbs);
 
 	return $Crumbs;
