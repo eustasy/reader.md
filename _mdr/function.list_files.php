@@ -14,7 +14,7 @@ function List_Files($Files, $Recursive = true, $Sub = false) {
 			$Return .= '<li><a href="'.$File.'"><em>'.url_to_title($File).'</em></a></li>';
 
 			if ( $Recursive ) {
-				$Return .= List_Files($Title,  $Recursive, $File);
+				$Return .= List_Files($Title, $Recursive, $File);
 			}
 
 		} else {
