@@ -1,4 +1,4 @@
-MDR (pronounced Mer-der, like a mermaid stating something obvious), is a markdown document reader and navigator system designed for lightweight docs that can be easily hosted on GitHub for community contributions, that also allows custom HTML and templating for total control of your own wiki-like site.
+MDR is a markdown document reader and navigator system designed for lightweight docs that can be easily hosted on GitHub for community contributions, that also allows custom HTML and templating for total control of your own wiki-like site.
 
 By offloading editing to GitHub, you site can run blazingly fast with just a few files, and a couple of lines of Markdown. In fact, almost half the projects size is [Parsedown](http://parsedown.org), a [better Markdown processor](http://parsedown.org/consistency), without the need to off registration, editing, or any of that messy stuff like password resets that comes with it (if you're looking to have that handled, try [Simplet](https://github.com/eustas/simplet)).
 
