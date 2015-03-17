@@ -1,3 +1,3 @@
-![alt](/md.png "title")
+![alt](http://parsedown.org/md.png "title")
 
-![blank title](/md.png "")
+![blank title](http://parsedown.org/md.png "")

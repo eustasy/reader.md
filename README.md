@@ -27,6 +27,6 @@ By offloading editing to GitHub, you site can run blazingly fast with just a few
 | [Normalize.css](https://github.com/necolas/normalize.css/) | Automatic (from [JSDelivr](http://www.jsdelivr.com)) | _CSS_ |
 | [Colors.css](https://github.com/eustasy/colors.css) | Automatic (from [JSDelivr](http://www.jsdelivr.com)) | _CSS_ |
 | [elementary Web Styles](https://github.com/elementary/web-styles) | January 2015 (sans Fonts) | _CSS_ |
-| Droid Serif | Automatic (from [Google Fonts](http://www.google.com/fonts)) | _Font_ |
-| Open Sans | Automatic (from [Google Fonts](http://www.google.com/fonts)) | _Font_ |
-| Inconsolata | Automatic (from [Google Fonts](http://www.google.com/fonts)) | _Font_ |
+| [Droid Serif](https://www.google.com/fonts/specimen/Droid+Serif) | Automatic (from [Google Fonts](http://www.google.com/fonts)) | _Font_ |
+| [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) | Automatic (from [Google Fonts](http://www.google.com/fonts)) | _Font_ |
+| [Inconsolata](https://www.google.com/fonts/specimen/Inconsolata) | Automatic (from [Google Fonts](http://www.google.com/fonts)) | _Font_ |

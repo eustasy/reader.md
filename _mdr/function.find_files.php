@@ -8,7 +8,7 @@ function Find_Files($Directory, $Recursive = true, $Recurred = false) {
 
 	foreach ( glob($Directory.'/*.md') as $File ) {
 		if ( strpos($File, '/_') === false ) {
-			$File = rtrim($File, '.md');
+			$File = substr($File, 0, -3);
 			if ( $Recurred ) {
 				$URL = str_replace($Directory, '', $File);
 			} else {
