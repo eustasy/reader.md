@@ -4,20 +4,13 @@
 
 ////	General Settings
 
-// How should MDR capitalize titles?
+// How should MDR capitalize things?
 // - 'Words'
 // - 'Sentences'
 // - 'First'
 // - 'All'
 // - 'None'
 $Settings['Capitalize']['Titles'] = 'Words';
-
-// How should MDR capitalize breadcrumbs?
-// - 'Words'
-// - 'Sentences'
-// - 'First'
-// - 'All'
-// - 'None'
 $Settings['Capitalize']['Breadcrumbs'] = 'All';
 
 // Language
