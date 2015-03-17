@@ -13,11 +13,18 @@
 				margin: 0 auto;
 				max-width: 50rem;
 				width: 90%;
+				-moz-tab-size: 4;
+				-o-tab-size:   4;
+				tab-size:      4;
 			}
 			footer {
 				opacity: 0.7;
 				margin: 5rem 0 1rem;
 			}
+			code {
+				white-space: pre;
+			}
+
 
 			hr {
 				border: none;
