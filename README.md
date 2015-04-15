@@ -23,10 +23,10 @@ By offloading editing to GitHub, you site can run blazingly fast with just a few
 | :--- | :--- | :--- |
 | [Parsedown](https://github.com/erusev/parsedown) | 1.5.1 |_PHP_ |
 | [ParsedownExtra](https://github.com/erusev/parsedown-extra) | 0.7.0 |_PHP_ |
-| [REM Polyfill](https://github.com/chuckcarpenter/REM-unit-polyfill) | 1.3.2 |_JavaScript_ |
 | [Normalize.css](https://github.com/necolas/normalize.css/) | Automatic (from [JSDelivr](http://www.jsdelivr.com)) | _CSS_ |
 | [Colors.css](https://github.com/eustasy/colors.css) | Automatic (from [JSDelivr](http://www.jsdelivr.com)) | _CSS_ |
 | [elementary Web Styles](https://github.com/elementary/web-styles) | January 2015 (sans Fonts) | _CSS_ |
 | [Droid Serif](https://www.google.com/fonts/specimen/Droid+Serif) | Automatic (from [Google Fonts](http://www.google.com/fonts)) | _Font_ |
 | [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) | Automatic (from [Google Fonts](http://www.google.com/fonts)) | _Font_ |
 | [Inconsolata](https://www.google.com/fonts/specimen/Inconsolata) | Automatic (from [Google Fonts](http://www.google.com/fonts)) | _Font_ |
+| [REM Polyfill](https://github.com/chuckcarpenter/REM-unit-polyfill) | Automatic (from [JSDelivr](http://www.jsdelivr.com)) |_JavaScript_ |
