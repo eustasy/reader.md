@@ -5,86 +5,8 @@
 		<title>MDR</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/normalize,colors.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700|Inconsolata">
-		<link rel="stylesheet" href="<?php echo $Assets['Styles']; ?>">
-		<style>
-
-			body {
-				font-size: 1em;
-				margin: 0 auto;
-				max-width: 50rem;
-				width: 90%;
-				-moz-tab-size: 4;
-				-o-tab-size:   4;
-				tab-size:      4;
-			}
-			footer {
-				opacity: 0.7;
-				margin: 5rem 0 1rem;
-			}
-			code {
-				white-space: pre;
-			}
-
-
-			hr {
-				border: none;
-				height: 1px;
-				background: #c9c9c9;
-			}
-			hr.fade-the-edges {
-				/* IE6-9 */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
-				/* IE10+ */
-				background: -ms-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
-				/* FF3.6+ */
-				background: -moz-linear-gradient(left,  #ffffff 0%, #c9c9c9 50%, #ffffff 100%);
-				/* Chrome,Safari4+ */
-				background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#c9c9c9), color-stop(100%,#ffffff));
-				/* Chrome10+,Safari5.1+ */
-				background: -webkit-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
-				/* Opera 11.10+ */
-				background: -o-linear-gradient(left,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
-				/* W3C */
-				background: linear-gradient(to right,  #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
-			}
-
-			h1 span {
-				font-size: 1rem;
-				opacity: 0.7;
-			}
-			.breadcrumbs {
-				color: #666;
-				opacity: 0.7;
-			}
-
-			th,
-			td {
-				padding: .5rem 2rem;
-			}
-			/*
-			tr th:first-child,
-			tr td:first-child { padding-left: 1rem; }
-			tr th:last-child,
-			tr td:last-child { padding-right: 1rem; }
-			*/
-			tr:nth-child(odd) { background: #fafafa; }
-			tr:nth-child(even) { background-color: #efefef; }
-			th {
-				background: #dfdfdf;
-			}
-
-			.text-center { text-align: center; }
-			.text-left   { text-align: left;   }
-			.text-right  { text-align: right;  }
-			.float-center {
-				float:  none;
-				margin: 0 auto;
-			}
-
-			.float-left  { float: left; }
-			.float-right { float: right; }
-
-		</style>
+		<link rel="stylesheet" href="/assets/elementary.min.css">
+		<link rel="stylesheet" href="/assets/mdr.min.css">
 	</head>
 	<body>
 		<h1>MDR <span>a markdown document reader and navigator</span></h1>
