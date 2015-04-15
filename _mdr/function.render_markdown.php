@@ -2,7 +2,7 @@
 
 function Render_Markdown($Source) {
 
-	global $Assets, $Lang, $Libraries, $MDR, $Request, $Settings, $Templates;
+	global $Lang, $Libraries, $MDR, $Request, $Settings, $Templates;
 
 	$Request['Source'] = $Source;
 	$Request['Source'] = str_replace($MDR['Root'], '', $Request['Source']);
