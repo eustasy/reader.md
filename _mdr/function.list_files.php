@@ -11,13 +11,13 @@ function List_Files($Files, $Recursive = true, $Sub = false) {
 		if ( is_array($Title) ) {
 
 			require_once $MDR['Core'].'/function.url_to_title.php';
-			$Return .= '<li><a href="'.$File.'"><em>'.url_to_title($File).'</em></a></li>';
+			$Return .= '<li><a href="'.$File.'/"><em>'.url_to_title($File).'</em></a></li>';
 
 			if ( $Recursive ) {
 				$Return .= List_Files($Title, $Recursive, $File);
 			}
 
-		} else {
+		} else if ( substr($File, -5) != 'index' ) {
 
 			if ( $File != '__NON_RECURSIVE__' ) {
 				$Return .= '<li><a href="';
