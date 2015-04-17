@@ -9,7 +9,13 @@ function Breadcrumbs($Breadcrumbs) {
 		$Crumbs[$Crumb] = $Breadcrumbs;
 		$Breadcrumbs = substr($Breadcrumbs, 0, $Offset);
 	}
-	$Crumbs['MDR'] = '/';
+	
+	if ( isset($Sitewide['Title']) ) {
+		$Crumbs[$Sitewide['Title']] = '/';
+	} else {
+		$Crumbs['MDR'] = '/';
+	}
+	
 	$Crumbs = array_reverse($Crumbs);
 
 	return $Crumbs;
