@@ -3,7 +3,7 @@
 function Breadcrumbs($Breadcrumbs) {
 
 	$Crumbs = array();
-	while (!empty($Breadcrumbs)) {
+	while ( !empty($Breadcrumbs) ) {
 		$Offset = strrpos($Breadcrumbs, '/');
 		$Crumb = substr($Breadcrumbs, $Offset + 1);
 		$Crumbs[$Crumb] = $Breadcrumbs;
