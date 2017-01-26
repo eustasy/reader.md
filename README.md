@@ -3,9 +3,9 @@ Reader.md is a markdown document reader and navigator system designed for lightw
 By offloading editing to GitHub, you site can run blazingly fast with just a few files, and a couple of lines of Markdown. In fact, almost half the projects size is [Parsedown](http://parsedown.org), a [better Markdown processor](http://parsedown.org/consistency). You can manage a document site without the need to offer registration, editing, or any of that messy stuff like password resets that comes with it.
 
 ## Code Quality
-[![Codacy Badge](https://www.codacy.com/project/badge/79daac16dd0d412796d528530c689753)](https://www.codacy.com/public/lewisgoddard/rmd)
-[![Code Climate](https://codeclimate.com/github/eustasy/rmd/badges/gpa.svg)](https://codeclimate.com/github/eustasy/rmd)
-[![Test Coverage](https://codeclimate.com/github/eustasy/rmd/badges/coverage.svg)](https://codeclimate.com/github/eustasy/rmd)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9ac6f05f106043798fe5ee9bb71624c2)](https://www.codacy.com/app/lewisgoddard/reader-md?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=eustasy/reader.md&amp;utm_campaign=Badge_Grade)
+[![Code Climate](https://codeclimate.com/github/eustasy/reader.md/badges/gpa.svg)](https://codeclimate.com/github/eustasy/reader.md)
+[![Test Coverage](https://codeclimate.com/github/eustasy/reader.md/badges/coverage.svg)](https://codeclimate.com/github/eustasy/reader.md/coverage)
 
 ## What Do You Need?
 - The latest [stable version](http://nginx.org/en/download.html) of [Nginx](http://nginx.org/).
