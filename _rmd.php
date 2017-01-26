@@ -29,7 +29,7 @@ if (
 		// START INDEX-MD
 		// Load `index.md` instead if available
 		$Request['Index'] = $Request['Directory'].'/index.md';
-		$Request['Readme'] = $Request['Directory'].'/readme.md';
+		$Request['Readme'] = $Request['Directory'].'/README.md';
 		if ( is_readable($Request['Index']) ) {
 			require_once $RMD['Functions'].'function.render_markdown.php';
 			Render_Markdown($Request['Index']);
