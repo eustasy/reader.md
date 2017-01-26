@@ -29,7 +29,7 @@ $Settings['Show Source'] = true;
 // Figure out what file they're after.
 
 $RMD['Settings']        = __DIR__;
-$RMD['Root']            = str_replace('/_settings', '', $RMD['Core']);]
+$RMD['Root']            = str_replace('/_settings', '', $RMD['Core']);
 $RMD['Libs']            = $RMD['Root'].'/_libs/';
 $RMD['Functions']       = $RMD['Root'].'/_functions/rmd/';
 $RMD['Templates']       = $RMD['Root'].'/_templates/';
