@@ -15,7 +15,7 @@ function Breadcrumbs($Breadcrumbs) {
 	} else {
 		$Crumbs['RMD'] = '/';
 	}
-	
+
 	$Crumbs = array_reverse($Crumbs);
 
 	return $Crumbs;
