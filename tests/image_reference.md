@@ -1,5 +1,5 @@
 ![Markdown Logo][image]
 
-[image]: http://parsedown.org/md.png
+[image]: /md.png
 
 ![missing reference]
