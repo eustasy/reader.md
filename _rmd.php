@@ -29,15 +29,12 @@ if (
 		// START INDEX-MD
 		// Load `index.md` instead if available
 		$Request['Index'] = $Request['Directory'].'/index.md';
+		$Request['Readme'] = $Request['Directory'].'/readme.md';
 		if ( is_readable($Request['Index']) ) {
 			require_once $RMD['Functions'].'function.render_markdown.php';
 			Render_Markdown($Request['Index']);
-		// END INDEX-MD
-
-		// START README-MD
 		// Load `readme.md` instead if available
-		$Request['Readme'] = $Request['Directory'].'/readme.md';
-		if ( is_readable($Request['Readme']) ) {
+		} else if ( is_readable($Request['Readme']) ) {
 			require_once $RMD['Functions'].'function.render_markdown.php';
 			Render_Markdown($Request['Readme']);
 		// END INDEX-MD
