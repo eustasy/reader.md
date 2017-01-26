@@ -2,18 +2,18 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>MDR</title>
+		<title>RMD</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/normalize,colors.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700|Inconsolata">
 		<link rel="stylesheet" href="/assets/elementary.min.css">
-		<link rel="stylesheet" href="/assets/mdr.min.css">
+		<link rel="stylesheet" href="/assets/rmd.min.css">
 	</head>
 	<body>
-		<h1>MDR <span>a markdown document reader and navigator</span></h1>
+		<h1>RMD <span>a markdown document reader and navigator</span></h1>
 		<?php
-			if ( $Request['Directory'] != $MDR['Root'] ) {
+			if ( $Request['Directory'] != $RMD['Root'] ) {
 
-				require_once $MDR['Core'].'/function.breadcrumbs.php';
+				require_once $RMD['Functions'].'/function.breadcrumbs.php';
 				$Crumbs = Breadcrumbs($Request['Trimmed']);
 
 				echo '<p class="breadcrumbs">';
@@ -25,14 +25,14 @@
 					} else {
 						echo ' &emsp;/&emsp; ';
 					}
-					require_once $MDR['Core'].'/function.url_to_title.php';
+					require_once $RMD['Functions'].'/function.url_to_title.php';
 					echo '<a href="'.$URL.'">'.url_to_title($Crumb, $Settings['Capitalize']['Breadcrumbs']).'</a>';
 				}
 				if (
 					$Settings['Show Source'] &&
 					$Request['Source']
 				) {
-					require_once $MDR['Core'].'/function.url_to_title.php';
+					require_once $RMD['Functions'].'/function.url_to_title.php';
 					echo '<a href="'.$Request['Source'].'" class="source float-right">';
 					echo url_to_title($Lang[$Settings['Language']]['SOURCE'], $Settings['Capitalize']['Breadcrumbs']);
 					echo '</a>';
