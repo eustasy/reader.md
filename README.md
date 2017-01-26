@@ -14,9 +14,8 @@ By offloading editing to GitHub, you site can run blazingly fast with just a few
 
 ## Install Guide
 1. Copy all the files into your web folder.
-2. Edit `_settings/nginx.rmd.conf`. You only need to change `server_name`, `root`, and `error_log`.
-3. Use that conf file to configure Nginx. You can do this with the command `sudo ln -s /var/www/com.example/_settings/nginx.rmd.conf /etc/nginx/sites-enabled/com.example`
-2. Take a look at the settings at the top of `_rmd.php`. You can change any of the settings in that file and the site will update as soon as you save it.
+2. Include `_settings/nginx.rmd.conf` into your normal Nginx template.
+3. Take a look at the settings at the top of `_settings/rmd.example.php`.
 
 ## Libraries
 | **Library** | Version | _Language_ |
