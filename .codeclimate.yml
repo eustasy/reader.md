@@ -4,6 +4,8 @@ engines:
     checks:
       gradients:
         enabled: false
+      box-sizing:
+        enabled: false
   duplication:
     enabled: true
     config:
@@ -28,3 +30,4 @@ ratings:
   - "**.rb"
 exclude_paths:
 - _libs/
+- assets/elementary*
