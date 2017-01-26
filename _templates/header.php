@@ -13,7 +13,7 @@
 		<?php
 			if ( $Request['Directory'] != $RMD['Root'] ) {
 
-				require_once $RMD['Functions'].'/function.breadcrumbs.php';
+				require_once $RMD['Functions'].'function.breadcrumbs.php';
 				$Crumbs = Breadcrumbs($Request['Trimmed']);
 
 				echo '<p class="breadcrumbs">';
@@ -25,14 +25,14 @@
 					} else {
 						echo ' &emsp;/&emsp; ';
 					}
-					require_once $RMD['Functions'].'/function.url_to_title.php';
+					require_once $RMD['Functions'].'function.url_to_title.php';
 					echo '<a href="'.$URL.'">'.url_to_title($Crumb, $Settings['Capitalize']['Breadcrumbs']).'</a>';
 				}
 				if (
 					$Settings['Show Source'] &&
 					$Request['Source']
 				) {
-					require_once $RMD['Functions'].'/function.url_to_title.php';
+					require_once $RMD['Functions'].'function.url_to_title.php';
 					echo '<a href="'.$Request['Source'].'" class="source float-right">';
 					echo url_to_title($Lang[$Settings['Language']]['SOURCE'], $Settings['Capitalize']['Breadcrumbs']);
 					echo '</a>';

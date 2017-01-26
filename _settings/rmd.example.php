@@ -29,7 +29,7 @@ $Settings['Show Source'] = true;
 $RMD['Settings']        = __DIR__;
 $RMD['Root']            = str_replace('/_settings', '', $RMD['Core']);]
 $RMD['Libs']            = $RMD['Root'].'/_libs/';
-$RMD['Functions']       = $RMD['Root'].'/_functions/';
+$RMD['Functions']       = $RMD['Root'].'/_functions/rmd/';
 $RMD['Templates']       = $RMD['Root'].'/_templates/';
 
 $Request['Raw']         = filter_input(INPUT_SERVER, 'REQUEST_URI');

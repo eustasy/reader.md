@@ -30,7 +30,7 @@ if (
 		// Load `index.md` instead if available
 		$Request['Index'] = $Request['Directory'].'/index.md';
 		if ( is_readable($Request['Index']) ) {
-			require_once $RMD['Functions'].'/function.render_markdown.php';
+			require_once $RMD['Functions'].'function.render_markdown.php';
 			Render_Markdown($Request['Index']);
 		// END INDEX-MD
 
@@ -41,18 +41,18 @@ if (
 
 			// Index Header
 			include $Templates['Header'];
-			require_once $RMD['Functions'].'/function.url_to_title.php';
+			require_once $RMD['Functions'].'function.url_to_title.php';
 			$Title = url_to_title($Request['Trimmed']);
 			if ( !empty($Title) ) {
 				echo '<h2>'.$Title.'</h2>';
 			}
 
 			// Find Suitable Files
-			require_once $RMD['Functions'].'/function.find_files.php';
+			require_once $RMD['Functions'].'function.find_files.php';
 			$Files = Find_Files($Request['Directory']);
 			ksort($Files);
 
-			require_once $RMD['Functions'].'/function.title_files.php';
+			require_once $RMD['Functions'].'function.title_files.php';
 			$Files = Title_Files($Files);
 
 			// List suitable files, or error accordingly.
@@ -60,7 +60,7 @@ if (
 				// Don't 404, because the directory does exist.
 				echo '<h3>'.$Lang['en']['NO_FILES_IN_DIRECTORY'].'</h3>';
 			} else {
-				require_once $RMD['Functions'].'/function.list_files.php';
+				require_once $RMD['Functions'].'function.list_files.php';
 				echo List_Files($Files);
 			}
 
@@ -81,13 +81,13 @@ if (
 		// START FALSE-DIRECTORY
 		if ( is_readable($Request['Directory']) ) {
 			// Apparently this isn't a directory, just a poorly named file.
-			require_once $RMD['Functions'].'/function.render_markdown.php';
+			require_once $RMD['Functions'].'function.render_markdown.php';
 			Render_Markdown($Request['Directory']);
 		// END FALSE-DIRECTORY
 
 		// START ACTUAL
 		} else {
-			require_once $RMD['Functions'].'/function.render_markdown.php';
+			require_once $RMD['Functions'].'function.render_markdown.php';
 			Render_Markdown($Request['Markdown']);
 		} // END ACTUAL
 
@@ -107,7 +107,7 @@ if (
 
 	include $Templates['Header'];
 
-	require_once $RMD['Functions'].'/function.url_to_title.php';
+	require_once $RMD['Functions'].'function.url_to_title.php';
 	$Title = url_to_title($Request['Trimmed']);
 	if ( !empty($Title) ) {
 		echo '<h2>'.$Title.'</h2>';
