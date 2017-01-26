@@ -1,5 +1,7 @@
 <?php
 
+////	!IMPORTANT: Copy this file to _settings/rmd.custom.php for editing.
+
 ////	General Settings
 
 // How should RMD capitalize things?
