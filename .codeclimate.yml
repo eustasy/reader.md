@@ -18,6 +18,15 @@ engines:
     enabled: true
   phpmd:
     enabled: true
+    checks:
+      Controversial/CamelCaseParameterName:
+        enabled: false
+      Controversial/CamelCaseVariableName:
+        enabled: false
+      CleanCode/BooleanArgumentFlag:
+        enabled: false
+      CleanCode/ElseExpression:
+        enabled: false
 ratings:
   paths:
   - "**.css"
