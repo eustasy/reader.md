@@ -40,3 +40,4 @@ ratings:
 exclude_paths:
 - _libs/
 - assets/elementary*
+- *.min.css
