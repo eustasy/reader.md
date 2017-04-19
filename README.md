@@ -3,10 +3,10 @@ Reader.md is a markdown document reader and navigator system designed for lightw
 By offloading editing to GitHub, you site can run blazingly fast with just a few files, and a couple of lines of Markdown. In fact, almost half the projects size is [Parsedown](http://parsedown.org), a [better Markdown processor](http://parsedown.org/consistency). You can manage a document site without the need to offer registration, editing, or any of that messy stuff like password resets that comes with it.
 
 ## Code Quality
-[![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=13582062)](https://www.bountysource.com/teams/eustasy/issues?tracker_ids=13582062)
+[![Build Status](https://travis-ci.org/eustasy/reader.md.svg?branch=master)](https://travis-ci.org/eustasy/reader.md)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9ac6f05f106043798fe5ee9bb71624c2)](https://www.codacy.com/app/lewisgoddard/reader-md?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=eustasy/reader.md&amp;utm_campaign=Badge_Grade)
 [![Code Climate](https://codeclimate.com/github/eustasy/reader.md/badges/gpa.svg)](https://codeclimate.com/github/eustasy/reader.md)
-[![Build Status](https://travis-ci.org/eustasy/reader.md.svg?branch=master)](https://travis-ci.org/eustasy/reader.md)
+[![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=13582062)](https://www.bountysource.com/teams/eustasy/issues?tracker_ids=13582062)
 
 
 ## What Do You Need?
