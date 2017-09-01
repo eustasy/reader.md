@@ -27,16 +27,21 @@ if (
 
 
 		// START INDEX-MD
-		// Load `index.md` instead if available
 		$Request['Index'] = $Request['Directory'].'/index.md';
 		$Request['Readme'] = $Request['Directory'].'/README.md';
+		$Request['Default'] = $Request['Directory'].'/Default.md';
+		// Load `index.md` instead if available
 		if ( is_readable($Request['Index']) ) {
 			require_once $RMD['Functions'].'function.render_markdown.php';
 			Render_Markdown($Request['Index']);
-		// Load `readme.md` instead if available
+		// Load `README.md` instead if available
 		} else if ( is_readable($Request['Readme']) ) {
 			require_once $RMD['Functions'].'function.render_markdown.php';
 			Render_Markdown($Request['Readme']);
+		// Load `Default.md` instead if available
+		} else if ( is_readable($Request['Default']) ) {
+			require_once $RMD['Functions'].'function.render_markdown.php';
+			Render_Markdown($Request['Default']);
 		// END INDEX-MD
 
 
