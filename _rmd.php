@@ -111,20 +111,58 @@ if (
 
 // START NON-EXISTANT
 } else {
+	
+	// START AUTO-INDEX
+	$Index = 'index';
+	if ( stripos($Request['Directory'], $Index, -strlen($Index)) === 0 ) {
 
-	// Headers MUST be sent before any content.
-	header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found');
+			// Index Header
+			include $Templates['Header'];
+			require_once $RMD['Functions'].'function.url_to_title.php';
+			$Title = url_to_title($Request['Trimmed']);
+			if ( !empty($Title) ) {
+				echo '<h2>'.$Title.'</h2>';
+			}
 
-	include $Templates['Header'];
+			// Find Suitable Files
+			require_once $RMD['Functions'].'function.find_files.php';
+			$Files = Find_Files($Request['Directory']);
+			ksort($Files);
 
-	require_once $RMD['Functions'].'function.url_to_title.php';
-	$Title = url_to_title($Request['Trimmed']);
-	if ( !empty($Title) ) {
-		echo '<h2>'.$Title.'</h2>';
-	}
+			require_once $RMD['Functions'].'function.title_files.php';
+			$Files = Title_Files($Files);
 
-	echo '<h3>'.$Lang[$Settings['Language']]['FILE_NOT_FOUND'].'</h3>';
+			// List suitable files, or error accordingly.
+			if ( empty($Files) ) {
+				// Don't 404, because the directory does exist.
+				echo '<h3>'.$Lang['en']['NO_FILES_IN_DIRECTORY'].'</h3>';
+			} else {
+				require_once $RMD['Functions'].'function.list_files.php';
+				echo List_Files($Files);
+			}
 
-	include $Templates['Footer'];
+			// Footer
+			include $Templates['Footer'];
+
+	// END AUTO-INDEX
+	// START 404 ERROR
+	} else {
+
+		// Headers MUST be sent before any content.
+		header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found');
+
+		include $Templates['Header'];
+
+		require_once $RMD['Functions'].'function.url_to_title.php';
+		$Title = url_to_title($Request['Trimmed']);
+		if ( !empty($Title) ) {
+			echo '<h2>'.$Title.'</h2>';
+		}
+
+		echo '<h3>'.$Lang[$Settings['Language']]['FILE_NOT_FOUND'].'</h3>';
+
+		include $Templates['Footer'];
+	
+	} // END 404 ERROR
 
 } // END NON-EXISTANT
