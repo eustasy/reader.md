@@ -12,17 +12,14 @@ footer {
 code {
 	white-space: pre;
 }
-
-
 hr {
 	border: none;
 	height: 1px;
 	background: #c9c9c9;
 }
 hr.fade-the-edges {
-	background: linear-gradient(to right, #ffffff 0%,#c9c9c9 50%,#ffffff 100%);
+	background: linear-gradient(to right, #ffffff 0%, #c9c9c9 50%, #ffffff 100%);
 }
-
 h1 span {
 	font-size: 1rem;
 	opacity: 0.7;
@@ -34,7 +31,7 @@ h1 span {
 
 th,
 td {
-	padding: .5rem 2rem;
+	padding: 0.5rem 2rem;
 }
 /*
 tr th:first-child,
@@ -47,7 +44,6 @@ tr:nth-child( even ) { background-color: #efefef; }
 th {
 	background: #dfdfdf;
 }
-
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
@@ -55,6 +51,5 @@ th {
 	float: none;
 	margin: 0 auto;
 }
-
 .float-left { float: left; }
 .float-right { float: right; }
