@@ -5,7 +5,7 @@
 		<title>RMD</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/normalize,colors.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700|Inconsolata">
-		<link rel="stylesheet" href="/assets/elementary.min.css">
+		<link rel="stylesheet" href="/assets/elementary.custom.min.css">
 		<link rel="stylesheet" href="/assets/rmd.min.css">
 	</head>
 	<body>
