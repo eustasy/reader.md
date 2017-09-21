@@ -2,7 +2,7 @@ function TaxBracket(income, bracket, tax) {
 	if ( income > bracket ) {
 		console.log(tax + '% tax on ' + ( income - bracket ) + ' for ' + bracket)
 		return ( ( income - bracket ) * tax )
-	} else 
+	} else {
 		return 0
 	}
 }
