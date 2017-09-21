@@ -17,64 +17,82 @@ Note: This is for the tax year 6 April 2017 to 5 April 2018.
 <script>
 function TaxBracket(income, bracket, tax) {
 	if ( income > bracket ) {
-		console.log(tax + '% tax on ' + ( income - bracket ) + ' for ' + bracket);
-		return ( ( income - bracket ) * tax );
-	} else {
+		console.log(tax + '% tax on ' + ( income - bracket ) + ' for ' + bracket)
+		return ( ( income - bracket ) * tax )
+	} else 
 		return 0;
 	}
 }
-var income = 0;
-var tax = 0;
+var income = 0
+var tax = 0
 function IncomeTaxCalculator() {
 
-	console.log(document.getElementById('income').value);
-	field = document.getElementById('income').value;
+	console.log(document.getElementById('income').value)
+	field = document.getElementById('income').value
 	// TODO Include that tax free allowance is removed at 100k
 
-	income = field;
-	tax = 0;
-	tax_bands = [];
-	brackets = [];
-	brackets.push(150000);
-	brackets.push(45000);
-	brackets.push(11500);
-	tax_bands.push(45);
-	tax_bands.push(40);
-	tax_bands.push(20);
-	var bracket_count = brackets.length;
+	income = field
+	tax = 0
+	tax_bands = []
+	brackets = []
+	brackets.push(150000)
+	brackets.push(45000)
+	brackets.push(11500)
+	tax_bands.push(45)
+	tax_bands.push(40)
+	tax_bands.push(20)
+	var bracket_count = brackets.length
 	for (var i = 0; i < bracket_count; i++) {
 		if ( income > brackets[i] ) {
-			tax = tax + TaxBracket(income, brackets[i], tax_bands[i]);
-			income = brackets[i];
+			tax = tax + TaxBracket(income, brackets[i], tax_bands[i])
+			income = brackets[i]
 		}
 	}
-	tax = tax / 100;
-	console.log(tax);
-	document.getElementById('js-target-tax').innerHTML = '£ ' + tax;
+	if ( field > 100000 ) {
+		overhold = field - 100000
+		overhold = overhold / 2
+		// Tax the pervious personal allowance at the normal rate.
+		if ( overhold > 11500 ) {
+			tax = tax + ( 11500 * 20 )
+		} else {
+			tax = tax + ( overhold * 20 )
+		}
+	}
+	tax = tax / 100
+	document.getElementById('js-target-tax').innerHTML = '£ ' + tax
 
 	// Proposed
-	income = field;
-	tax = 0;
-	tax_bands = [];
-	brackets = [];
-	brackets.push(123000);
-	brackets.push(80000);
-	brackets.push(45000);
-	brackets.push(11500);
-	tax_bands.push(50);
-	tax_bands.push(45);
-	tax_bands.push(40);
-	tax_bands.push(20);
-	var bracket_count = brackets.length;
+	income = field
+	tax = 0
+	tax_bands = []
+	brackets = []
+	brackets.push(123000)
+	brackets.push(80000)
+	brackets.push(45000)
+	brackets.push(11500)
+	tax_bands.push(50)
+	tax_bands.push(45)
+	tax_bands.push(40)
+	tax_bands.push(20)
+	var bracket_count = brackets.length
 	for (var i = 0; i < bracket_count; i++) {
 		if ( income > brackets[i] ) {
-			tax = tax + TaxBracket(income, brackets[i], tax_bands[i]);
-			income = brackets[i];
+			tax = tax + TaxBracket(income, brackets[i], tax_bands[i])
+			income = brackets[i]
 		}
 	}
-	tax = tax / 100;
-	console.log(tax);
-	document.getElementById('js-target-new').innerHTML = '£ ' + tax;
+	if ( field > 100000 ) {
+		overhold = field - 100000
+		overhold = overhold / 2
+		// Tax the pervious personal allowance at the normal rate.
+		if ( overhold > 11500 ) {
+			tax = tax + ( 11500 * 20 )
+		} else {
+			tax = tax + ( overhold * 20 )
+		}
+	}
+	tax = tax / 100
+	document.getElementById('js-target-new').innerHTML = '£ ' + tax
 
 }
 </script>
