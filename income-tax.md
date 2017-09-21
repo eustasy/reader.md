@@ -29,7 +29,6 @@ function IncomeTaxCalculator() {
 
 	console.log(document.getElementById('income').value)
 	field = document.getElementById('income').value
-	// TODO Include that tax free allowance is removed at 100k
 
 	income = field
 	tax = 0
