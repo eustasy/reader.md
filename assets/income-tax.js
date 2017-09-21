@@ -35,10 +35,10 @@ function IncomeTaxCalculator() {
 		overhold = overhold / 2
 		// Tax the pervious personal allowance at the normal rate.
 		if ( overhold > 11500 ) {
-			console.log('20% tax on ' + 11500)
+			console.log('20% tax on 11500 (no personal allowance)')
 			tax = tax + ( 11500 * 20 )
 		} else {
-			console.log('20% tax on ' + overhold)
+			console.log('20% tax on ' + overhold + ' (no personal allowance)')
 			tax = tax + ( overhold * 20 )
 		}
 	}
@@ -70,10 +70,10 @@ function IncomeTaxCalculator() {
 		overhold = overhold / 2
 		// Tax the pervious personal allowance at the normal rate.
 		if ( overhold > 11500 ) {
-			console.log('20% tax on ' + 11500)
+			console.log('20% tax on 11500 (no personal allowance)')
 			tax = tax + ( 11500 * 20 )
 		} else {
-			console.log('20% tax on ' + overhold)
+			console.log('20% tax on ' + overhold + ' (no personal allowance)')
 			tax = tax + ( overhold * 20 )
 		}
 	}
