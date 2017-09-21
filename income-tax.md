@@ -1,17 +1,18 @@
 ## Income Tax in the UK
 
 ### Tax-Free Allowance
-Most people get a **tax-free allowance of £10,000**, but this changes if you were born before [6 April 1948](https://www.gov.uk/income-tax-rates/born-before-6-april-1948) OR your [income’s over £100,000](https://www.gov.uk/income-tax-rates/income-over-100000).
+Most people get a **tax-free allowance of £11,500**, but this changes if you were born before [6 April 1948](https://www.gov.uk/income-tax-rates/born-before-6-april-1948) OR your [income’s over £100,000](https://www.gov.uk/income-tax-rates/income-over-100000).
 
-### Stacking Tax Brackets
-| Taxable Income | **Income Tax Rate** |
-|:---------------|--------------------:|
-| First £31,865 | **20%** |
-| From £31,865 to £150,000 | **40%** |
-| Over £150,000 | **45%** |
+### Stacking Tax Bands
+| Tax Band | Taxable Income | **Income Tax Rate** |
+|:---------|:---------------|--------------------:|
+| Personal Allowance | First £11,500 | **0%** |
+| Basic rate | From £11,501 to £45,000 | **20%** |
+| Higher rate | From £45,001 to £150,000 | **40%** |
+| Additional rate | Over £150,000 | **45%** |
 
 ### Calculator
-Note: This is for the tax year 6 April 2014 to 5 April 2015.
+Note: This is for the tax year 6 April 2017 to 5 April 2018.
 
 <script>
 function TaxBracket(income, bracket, tax) {
@@ -28,15 +29,15 @@ function IncomeTaxCalculator() {
 
 	console.log(document.getElementById('income').value);
 	field = document.getElementById('income').value;
+	// TODO Include that tax free allowance is removed at 100k
 
-	// 2013-2014
 	income = field;
 	tax = 0;
 	tax_bands = [];
 	brackets = [];
-	brackets.push(160000);
-	brackets.push(41865);
-	brackets.push(10000);
+	brackets.push(150000);
+	brackets.push(45000);
+	brackets.push(11500);
 	tax_bands.push(45);
 	tax_bands.push(40);
 	tax_bands.push(20);
@@ -56,9 +57,11 @@ function IncomeTaxCalculator() {
 	tax = 0;
 	tax_bands = [];
 	brackets = [];
-	brackets.push(161000);
-	brackets.push(42865);
-	brackets.push(11000);
+	brackets.push(123000);
+	brackets.push(80000);
+	brackets.push(45000);
+	brackets.push(11500);
+	tax_bands.push(50);
 	tax_bands.push(45);
 	tax_bands.push(40);
 	tax_bands.push(20);
