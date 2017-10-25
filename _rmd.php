@@ -1,7 +1,5 @@
 <?php
 
-
-
 // START SETTINGS
 if ( is_readable(__DIR__.'/_settings/rmd.php') ) {
 	require_once __DIR__.'/_settings/rmd.php';
@@ -111,7 +109,7 @@ if (
 
 // START NON-EXISTANT
 } else {
-	
+
 	// START AUTO-INDEX
 	$Index = 'index';
 	if ( stripos($Request['Directory'], $Index, -strlen($Index)) === 0 ) {
@@ -162,7 +160,7 @@ if (
 		echo '<h3>'.$Lang[$Settings['Language']]['FILE_NOT_FOUND'].'</h3>';
 
 		include $Templates['Footer'];
-	
+
 	} // END 404 ERROR
 
 } // END NON-EXISTANT
