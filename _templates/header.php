@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>RMD</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/normalize,colors.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/eustasy/Colors.css@1.9.2/colors.min.css,gh/necolas/normalize.css@8.0.0/normalize.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700|Inconsolata">
 		<link rel="stylesheet" href="/assets/elementary.min.css">
 		<link rel="stylesheet" href="/assets/rmd.min.css">
