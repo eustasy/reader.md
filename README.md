@@ -19,8 +19,8 @@ Reader.md is a markdown document reader and navigator system designed for lightw
 ## Libraries
 | **Library** | Version | _Language_ |
 | :--- | :--- | :--- |
-| [Parsedown](https://github.com/erusev/parsedown) | 1.6.3 |_PHP_ |
-| [ParsedownExtra](https://github.com/erusev/parsedown-extra) | 0.7.1 |_PHP_ |
+| [Parsedown](https://github.com/erusev/parsedown) | 1.7.4 |_PHP_ |
+| [ParsedownExtra](https://github.com/erusev/parsedown-extra) | 0.8.0 |_PHP_ |
 | [Normalize.css](https://github.com/necolas/normalize.css/) | Automatic (from [JSDelivr](http://www.jsdelivr.com)) | _CSS_ |
 | [Colors.css](https://github.com/eustasy/colors.css) | Automatic (from [JSDelivr](http://www.jsdelivr.com)) | _CSS_ |
 | [elementary Web Styles](https://github.com/elementary/web-styles) | January 2015 (sans Fonts) | _CSS_ |
